@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+$text: #f1f1f1;
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body {
+	padding: 20px;
+	background-color: #202124;
+	color: $text;
+}
+
+.card {
+	background-color: transparent;
+	border-color: $text;
+
+	input + button {
+		margin-left: 15px;
+	}
+}

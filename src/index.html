@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Workers</title>
+	<link rel="stylesheet" href="scss/style.scss">
+	<script async defer type="module" src="js/script.js"></script>
+</head>
+<body class="l-body">
+	<div class="container">
+		<h1 class="border-bottom pb-3 mb-4">Web workers</h1>
+
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Main thread</h5>
+						<p class="card-text">Sum of <span id="mTitleNumbers"></span> natural numbers:</p>
+
+						<div class="d-flex mb-3">
+							<input id="mInputNumbers" type="number" class="form-control" placeholder="Enter some number">
+
+							<button id="mCalculateBtn" type="button" class="btn btn-primary">Calculate</button>
+						</div>
+
+						<p class="card-text">Result: <span id="mResult"></span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Using web workers</h5>
+						<p class="card-text">Sum of <span id="wTitleNumbers"></span> natural numbers:</p>
+
+						<div class="d-flex mb-3">
+							<input id="wInputNumbers" type="number" class="form-control" placeholder="Enter some number">
+
+							<button id="wCalculateBtn" type="button" class="btn btn-primary">Calculate</button>
+						</div>
+
+						<p class="card-text">Result: <span id="wResult"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mt-4">
+			<button id="backgroundBtn" type="button" class="btn btn-primary">Change background</button>
+		</div>
+	</div>
+</body>
+</html>
+
