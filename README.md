@@ -1,6 +1,6 @@
 # Web workers example
 
-Simple example for Web Workers API.
+A simple example for Web Workers API.
 
 ```
 npm run start
